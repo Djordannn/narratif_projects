@@ -9,11 +9,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-interface IBlog {
-  title: string;
-  text: string;
-  img: string;
-}
+// interface IBlog {
+//   title: string;
+//   text: string;
+//   img: string;
+// }
 
 const blogItem = [
   {
@@ -53,7 +53,7 @@ const blogItem = [
   },
 ];
 
-const Blog: React.FC<IBlog> = ({ title, text, img }) => {
+const Blog = () => {
   const newBlogItem = blogItem.map((value, index) => {
     return (
       <Card key={`${value}-${index}`}>

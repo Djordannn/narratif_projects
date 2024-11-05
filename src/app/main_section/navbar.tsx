@@ -18,7 +18,7 @@ export default function Navbar() {
             />
             <h2 className="text-xl font-semibold 2xl:text-2xl">narratif</h2>
           </Link>
-          <ul className=" hidden lg:flex items-center gap-5 text-lg 2xl:text-2xl sm:hidden">
+          <ul className="hidden lg:flex items-center gap-5 text-lg 2xl:text-2xl sm:hidden">
             <li>
               <Link href="/">home</Link>
             </li>
