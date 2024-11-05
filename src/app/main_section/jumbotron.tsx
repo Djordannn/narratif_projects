@@ -42,7 +42,7 @@ const Jumbotron = () => {
   const autoplay = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
   const newImgJumbotron = imgJumbotron.map((value, index) => {
     return (
-      <CarouselItem className="w-[100%] m-0 p-0">
+      <CarouselItem key={index} className="w-[100%] m-0 p-0">
         <div className="relative w-[100%]">
           <a href={value.link}>
             <Image
@@ -63,7 +63,7 @@ const Jumbotron = () => {
     <div className="relative">
       <Carousel
         plugins={[autoplay.current]}
-        options={{ loop: true, containScroll: "trimSnaps" }}
+        // options={{ loop: true, containScroll: "trimSnaps" }}
         className="w-[100%]"
       >
         <CarouselContent className="w-[100%]">
