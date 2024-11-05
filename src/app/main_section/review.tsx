@@ -37,7 +37,7 @@ const dataReview = [
 const Review = () => {
   const newDataReview = dataReview.map((value, index) => {
     return (
-      <div className="bg-[#eeee] p-4 flex flex-col justify-between">
+      <div key={index} className="bg-[#eeee] p-4 flex flex-col justify-between">
         <div className=" ">
           <div className="flex items-center gap-2 mb-2">
             <p className="text-2xl">
