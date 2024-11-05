@@ -23,13 +23,13 @@ export default function Navbar() {
               <Link href="/">home</Link>
             </li>
             <li>
-              <Link href="blog">blog</Link>
+              <Link href="/blog">blog</Link>
             </li>
             <li>
-              <Link href="product">product</Link>
+              <Link href="/product">product</Link>
             </li>
             <li>
-              <Link href="gallery">gallery</Link>
+              <Link href="/gallery">gallery</Link>
             </li>
             <li>
               <Link href="#">contact</Link>
