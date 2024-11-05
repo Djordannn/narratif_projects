@@ -12,14 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-interface IJumbotron {
-  title: string;
-  text: string;
-  imgUrl: string;
-  link: string;
-}
-
-const imgJumbotron: React.FC<IJumbotron> = [
+const imgJumbotron = [
   {
     title: "Title",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",

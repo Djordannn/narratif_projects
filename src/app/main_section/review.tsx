@@ -10,10 +10,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-interface IReview {
-  ig: string;
-  text: string;
-}
+// interface IReview {
+//   ig: string;
+//   text: string;
+// }
 
 const dataReview = [
   {

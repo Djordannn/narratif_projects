@@ -24,11 +24,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-interface IProduct {
-  name: string;
-  price: number;
-  imgUrl: string;
-}
+// interface IProduct {
+//   name: string;
+//   price: number;
+//   imgUrl: string;
+// }
 
 const dataProduct = [
   {
@@ -58,7 +58,7 @@ const dataProduct = [
   },
 ];
 
-const CardProduct: React.FC<IProduct> = ({ name, price, imgUrl }) => {
+const CardProduct = () => {
   const newDataProduct = dataProduct.map((value, index) => {
     return (
       <CarouselItem key={index} className="basis-1/3 flex-shrink-0">
