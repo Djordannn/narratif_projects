@@ -21,8 +21,8 @@ const Footer = () => {
             <h1 className="text-5xl">Narratif</h1>
           </div>
           <p className="w-[70%] text-sm mt-3">
-            Stories don't only come from customers, other stories will also come
-            from us. Wait and follow our journey further.
+            Stories don&apops;t only come from customers, other stories will
+            also come from us. Wait and follow our journey further.
           </p>
           <div>
             <ul className="flex flex-col mt-5 gap-4 text-2xl">
