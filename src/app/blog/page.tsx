@@ -1,6 +1,7 @@
 "use clinet";
 import React from "react";
 import Image from "../../../node_modules/next/image";
+import img from "/public/image/pati3.webp";
 import {
   Card,
   CardContent,
@@ -9,54 +10,41 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-// interface IBlog {
-//   title: string;
-//   text: string;
-//   imgUrl: string;
-// }
-
 const blogItem = [
   {
-    title: "masukkan royco 😜",
+    title: "Blog title",
     text: "Use these Tailwind CSS description list components to present detailed information in a structured and readable format. These components are designed and built by the Tailwind CSS team, and",
-    imgUrl:
-      "https://i.pinimg.com/564x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg",
+    imgUrl: img,
   },
   {
-    title: "masukkan royco 😜",
+    title: "Blog title",
     text: "Use these Tailwind CSS description list components to present detailed information in a structured and readable format. These components are designed and built by the Tailwind CSS team, and",
-    imgUrl:
-      "https://i.pinimg.com/564x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg",
+    imgUrl: img,
   },
   {
     title: "How to Make Money",
     text: "Learn I'll show you how with a blog AND without a blog. See how I make over $15,000 every month from home with Pinterest!",
-    imgUrl:
-      "https://i.pinimg.com/564x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg",
+    imgUrl: img,
   },
   {
-    title: "masukkan royco 😜",
+    title: "Blog title",
     text: "Use these Tailwind CSS description list components to present detailed information in a structured and readable format. These components are designed and built by the Tailwind CSS team, and",
-    imgUrl:
-      "https://i.pinimg.com/564x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg",
+    imgUrl: img,
   },
   {
     title: "Lakukan Hal Ini, Jangan Panik!",
     text: "A list of 20 Foundation - The Pros of Each Foundation and Who the Foundations Support Links to each Foundation to make it easier for you to APPLY PLUS - A Nonprofit Metric Checklist - Fill in the EXCEL file to track for your Nonprofit’s Success quarter by quarter PLUS - A Grant Tracking Excel File - log the grants and track your submissions PLUS - A list of The TOP Nonprofit Conferences so that you can continue to learn PLUS - Access to Easy Nonprofit an interactive Facebook group.",
-    imgUrl:
-      "https://i.pinimg.com/564x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg",
+    imgUrl: img,
   },
   {
-    title: "masukkan royco 😜",
+    title: "Blog title",
     text: "Use these Tailwind CSS description list components to present detailed information in a structured and readable format. These components are designed and built by the Tailwind CSS team, and",
-    imgUrl:
-      "https://i.pinimg.com/564x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg",
+    imgUrl: img,
   },
   {
-    title: "masukkan royco 😜",
+    title: "Blog title",
     text: "Use these Tailwind CSS description list components to present detailed information in a structured and readable format. These components are designed and built by the Tailwind CSS team, and",
-    imgUrl:
-      "https://i.pinimg.com/564x/5d/19/3b/5d193bd932c23fd5619ef72b5eda3f48.jpg",
+    imgUrl: img,
   },
 ];
 
