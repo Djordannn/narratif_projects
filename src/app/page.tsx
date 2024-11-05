@@ -7,14 +7,6 @@ import Sectionprov from "@/app/main_section/sectionProvider";
 import CardProduct from "@/app/main_section/cardProduct";
 import Gallery from "@/app/main_section/gallery";
 import Review from "@/app/main_section/review";
-import Footer from "@/app/main_section/footer";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 export default function Home() {
   return (

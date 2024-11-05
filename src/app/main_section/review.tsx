@@ -1,14 +1,6 @@
 "use client";
 import React from "react";
 import { RxInstagramLogo } from "react-icons/rx";
-import { FaStar } from "react-icons/fa";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 // interface IReview {
 //   ig: string;

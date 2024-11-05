@@ -1,6 +1,5 @@
 "use client";
 import Image from "../../../node_modules/next/image";
-import img from "@/image/img-card.png";
 import ImgFutsal from "/public/image/futsal.jpg";
 import ImgRunner from "/public/image/runner.jpg";
 import ImgJersey from "/public/image/jersey.jpg";
