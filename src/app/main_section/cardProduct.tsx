@@ -54,7 +54,7 @@ const dataProduct = [
 const CardProduct = () => {
   const newDataProduct = dataProduct.map((value, index) => {
     return (
-      <CarouselItem key={index} className="basis-1/3 flex-shrink-0">
+      <CarouselItem key={index} className="basis-[29%] flex-shrink-0">
         <Card className="w-[100%]">
           <CardHeader className="bg-[#eeee]">
             <Image
@@ -80,7 +80,7 @@ const CardProduct = () => {
   });
 
   return (
-    <div className="py-16 md:py-24 mx-[5%]">
+    <div className="py-16 md:py-24 mb-[4rem] mx-[5%]">
       <div className="text-center animation">
         <h2 className="text-3xl">popular products</h2>
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />

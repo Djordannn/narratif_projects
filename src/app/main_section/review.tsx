@@ -37,7 +37,10 @@ const dataReview = [
 const Review = () => {
   const newDataReview = dataReview.map((value, index) => {
     return (
-      <div key={index} className="bg-[#eeee] p-4 flex flex-col justify-between">
+      <div
+        key={index}
+        className="bg-[#eeee] md:h-[200px] p-4 flex flex-col justify-between"
+      >
         <div className=" ">
           <div className="flex items-center gap-2 mb-2">
             <p className="text-2xl">
@@ -52,8 +55,8 @@ const Review = () => {
   });
 
   return (
-    <div className="py-16 mb-6 md:py-24 mx-[5%] md:mx-0 md:pl-[5%]">
-      <div className="text-center animation md:pr-[5%]">
+    <div className="py-16 mb-6 md:py-14 mx-[5%] md:mx-0 md:pl-[5%]">
+      <div className="text-center md:pr-[5%]">
         <h2 className="text-3xl">what people say</h2>
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
         <p className="mt-4">

@@ -46,12 +46,14 @@ const Jumbotron = () => {
             <Image
               src={value.imgUrl}
               alt="img"
-              className="w-[100%] ml-4 h-[500px] md:h-[600px] object-cover object-top"
+              className="w-[100%] ml-4 h-[500px] md:h-[500px] object-cover object-top"
             />
-            <div className="absolute left-8 bottom-5 md:left-16 md:bottom-10 text-white">
-              <h1 className="text-3xl tracking-[5px]">{value.title}</h1>
+            {/* <div className="absolute left-8 bottom-5 md:left-16 md:bottom-10 text-white flex flex-col gap-3">
+              <h1 className="text-5xl font-semibold tracking-wide">
+                {value.title}
+              </h1>
               <p className="w-[80%]">{value.text}</p>
-            </div>
+            </div> */}
           </a>
         </div>
       </CarouselItem>

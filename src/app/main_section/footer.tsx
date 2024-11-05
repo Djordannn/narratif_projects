@@ -10,44 +10,99 @@ import logo from "/public/image/logo.png";
 const Footer = () => {
   return (
     <div className="footer py-20 bg-[#2d2d2d] text-[#eeee] px-[5%] font-thin">
-      <div className="text-center flex flex-col gap-5">
-        <div>
-          <Image
-            src={logo}
-            alt="img"
-            className="w-[100px] mx-auto bg-[#ffff] p-5 rounded-lg"
-          />
-          <p className="mt-8 w-[80%] md:w-[50%] mx-auto text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            quis expedita, quasi at iusto earum nisi molestiae eum veniam unde?
+      <div className="flex justify-between items-baseline gap-5">
+        <div className="w-[40%]">
+          <div className="flex items-center gap-4">
+            <Image
+              src={logo}
+              alt="img"
+              className="w-[80px] bg-[#ffff] p-5 rounded-lg"
+            />
+            <h1 className="text-5xl">Narratif</h1>
+          </div>
+          <p className="w-[70%] text-sm mt-3">
+            Stories don't only come from customers, other stories will also come
+            from us. Wait and follow our journey further.
           </p>
+          <div>
+            <ul className="flex flex-col mt-5 gap-4 text-2xl">
+              <li className="flex gap-4 items-center">
+                <AiOutlineMail />
+                <p className="text-sm">example@gmail.com</p>
+              </li>
+              <li className="flex gap-4 items-center">
+                <FaWhatsapp />
+                <p className="text-sm">+62 84* **** ****</p>
+              </li>
+              <li className="flex gap-4 items-center">
+                <IoLocationOutline />
+                <p className="text-sm">location📌</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="flex gap-4 text-2xl justify-center">
-          <RxInstagramLogo />
-          <FaWhatsapp />
-          <AiOutlineMail />
-          <IoLocationOutline />
+        <div className="w-[70%] flex justify-between">
+          <div>
+            <div className="mb-4">
+              <h2 className="text-lg mb-2">our service</h2>
+              <div className="h-1 bg-white fit-content rounded"></div>
+            </div>
+            <ul className="flex flex-col gap-3 justify-center">
+              <li>
+                <Link href="#">blog</Link>
+              </li>
+              <li>
+                <Link href="#">product</Link>
+              </li>
+              <li>
+                <Link href="#">contact</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div className="mb-4">
+              <h2 className="text-lg mb-2">privacy</h2>
+              <div className="h-1 bg-white fit-content rounded"></div>
+            </div>
+            <ul className="flex flex-col gap-3 justify-center">
+              <li>
+                <Link href="#">FAQ</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div className="mb-4">
+              <h2 className="text-lg mb-2">follow me</h2>
+              <div className="h-1 bg-white w-[60%] rounded"></div>
+            </div>
+            <div>
+              <ul className="flex gap-3">
+                <li className="bg-[#3c3c3c] p-3">
+                  <a href="#">
+                    <RxInstagramLogo />
+                  </a>
+                </li>
+                <li className="bg-[#3c3c3c] p-3">
+                  <a href="#">
+                    <RxInstagramLogo />
+                  </a>
+                </li>
+                <li className="bg-[#3c3c3c] p-3">
+                  <a href="#">
+                    <RxInstagramLogo />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <ul className="flex gap-5 justify-center">
-            <li>
-              <Link href="#">home</Link>
-            </li>
-            <li>
-              <Link href="#">blog</Link>
-            </li>
-            <li>
-              <Link href="#">product</Link>
-            </li>
-            <li>
-              <Link href="#">contact</Link>
-            </li>
-          </ul>
-        </div>
-        <hr className="mt-5" />
-        <div>
-          <h3>copyright Company all right reserved</h3>
-        </div>
+      </div>
+      <hr className="h-1 my-[4rem] bg-white" />
+      <div className="-mt-[2rem] text-center">
+        <h3>
+          copyright <span className="font-semibold">narratif.apparel</span> all
+          right reserved
+        </h3>
       </div>
     </div>
   );
