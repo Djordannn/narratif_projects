@@ -51,11 +51,11 @@ const blogItem = [
 const Blog = () => {
   const newBlogItem = blogItem.map((value, index) => {
     return (
-      <Card key={`${value}-${index}`}>
+      <Card key={index}>
         <CardHeader className="p-0">
           <Image
             src={value.imgUrl}
-            alt=""
+            alt="img"
             className="w-full h-[250px] object-cover"
           />
         </CardHeader>
