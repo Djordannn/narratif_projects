@@ -82,14 +82,16 @@ const CardProduct = () => {
         <Carousel className="py-12">
           <CarouselContent className="flex w-full gap-2">
             {dataProduct.map((value, index) => (
-              <CarouselItem key={index} className="w-[25%] flex-shrink-0">
-                <Image
-                  src={value.imgUrl}
-                  alt="img"
-                  width={400}
-                  height={400}
-                  className="object-cover w-full h-[300px]"
-                />
+              <CarouselItem key={index} className="basis-[29%] flex-shrink-0">
+                <div className="bg-[#eeee]">
+                  <Image
+                    src={value.imgUrl}
+                    alt="img"
+                    width={400}
+                    height={400}
+                    className="w-full h-[320px] object-contain pb-10"
+                  />
+                </div>
                 <div className="mt-2">
                   <h3 className="text-lg">{value.name}</h3>
                   <p className="text-xl">
@@ -106,7 +108,7 @@ const CardProduct = () => {
           <CarouselNext className="text-black" />
         </Carousel>
 
-        <div>
+        <div className="mt-5">
           <Link href="product" className="py-4 px-7 bg-[#2d2d2d] text-white">
             more products
           </Link>
