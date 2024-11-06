@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "../../../node_modules/next/link";
 import Image from "../../../node_modules/next/image";
 import logo from "/public/image/logo.png";
@@ -18,21 +16,24 @@ export default function Navbar() {
             />
             <h2 className="text-xl font-semibold 2xl:text-2xl">narratif</h2>
           </Link>
-          <ul className="hidden lg:flex items-center gap-5 text-lg 2xl:text-2xl sm:hidden">
+          <ul className="hidden lg:flex items-center gap-5 text-lg 2xl:text-2xl sm:hidden uppercase">
             <li>
               <Link href="/">home</Link>
-            </li>
-            <li>
-              <Link href="/blog">blog</Link>
             </li>
             <li>
               <Link href="/product">product</Link>
             </li>
             <li>
+              <Link href="/customJersey">custom jersey</Link>
+            </li>
+            <li>
+              <Link href="/blog">blog</Link>
+            </li>
+            <li>
               <Link href="/gallery">gallery</Link>
             </li>
             <li>
-              <Link href="#">contact</Link>
+              <Link href="/link">contact</Link>
             </li>
           </ul>
           <div className="lg:hidden md:block">

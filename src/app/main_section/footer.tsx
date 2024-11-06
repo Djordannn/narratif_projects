@@ -10,8 +10,8 @@ import logo from "/public/image/logo.png";
 const Footer = () => {
   return (
     <div className="footer py-20 bg-[#2d2d2d] text-[#eeee] px-[5%] font-thin">
-      <div className="flex justify-between items-baseline gap-5">
-        <div className="w-[40%]">
+      <div className="flex flex-col md:flex-row justify-between items-baseline gap-5">
+        <div className="md:w-[40%]">
           <div className="flex items-center gap-4">
             <Image
               src={logo}
@@ -20,7 +20,7 @@ const Footer = () => {
             />
             <h1 className="text-5xl">Narratif</h1>
           </div>
-          <p className="w-[70%] text-sm mt-3">
+          <p className="md:w-[70%] text-sm mt-3">
             Stories don&apops;t only come from customers, other stories will
             also come from us. Wait and follow our journey further.
           </p>
@@ -41,11 +41,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="w-[70%] flex justify-between">
+        <div className="md:w-[70%] grid grid-cols-2 md:grid-cols-3 justify-between gap-8 md:gap-0">
           <div>
             <div className="mb-4">
               <h2 className="text-lg mb-2">our service</h2>
-              <div className="h-1 bg-white fit-content rounded"></div>
+              <div className="h-1 bg-white w-[30%] md:w-[60%] rounded"></div>
             </div>
             <ul className="flex flex-col gap-3 justify-center">
               <li>
@@ -62,7 +62,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <h2 className="text-lg mb-2">privacy</h2>
-              <div className="h-1 bg-white fit-content rounded"></div>
+              <div className="h-1 bg-white w-[30%] md:w-[60%] rounded"></div>
             </div>
             <ul className="flex flex-col gap-3 justify-center">
               <li>
@@ -73,7 +73,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <h2 className="text-lg mb-2">follow me</h2>
-              <div className="h-1 bg-white w-[60%] rounded"></div>
+              <div className="h-1 bg-white w-[30%] md:w-[60%] rounded"></div>
             </div>
             <div>
               <ul className="flex gap-3">
@@ -99,7 +99,7 @@ const Footer = () => {
       </div>
       <hr className="h-1 my-[4rem] bg-white" />
       <div className="-mt-[2rem] text-center">
-        <h3>
+        <h3 className="text-sm md:text-lg">
           copyright <span className="font-semibold">narratif.apparel</span> all
           right reserved
         </h3>

@@ -15,13 +15,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-// interface IProduct {
-//   name: string;
-//   price: number;
-//   imgUrl: string;
-// }
 
 const dataProduct = [
   {
@@ -54,50 +47,70 @@ const dataProduct = [
 const CardProduct = () => {
   const newDataProduct = dataProduct.map((value, index) => {
     return (
-      <CarouselItem key={index} className="basis-[29%] flex-shrink-0">
-        <Card className="w-[100%]">
-          <CardHeader className="bg-[#eeee]">
-            <Image
-              src={value.imgUrl}
-              alt="img"
-              className="w-[100%] object-contain pb-[1.5rem] md:pb-[2.7rem] xl:h-[330px] 2xl:pb-[2.5rem] 2xl:h-[360px]"
-            />
-          </CardHeader>
-          <CardContent>
-            <div className="mt-2">
-              <CardTitle className="text-md md:text-lg">{value.name}</CardTitle>
-              <p className="text-lg md:text-xl">
-                {value.price.toLocaleString("id", {
-                  style: "currency",
-                  currency: "IDR",
-                })}
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-      </CarouselItem>
+      <div key={index}>
+        <div className="bg-[#eeee]">
+          <Image
+            src={value.imgUrl}
+            alt="img"
+            className="h-[200px] object-contain pb-9"
+          />
+        </div>
+        <div className="mt-2">
+          <h3>{value.name}</h3>
+          <p>
+            {value.price.toLocaleString("id", {
+              style: "currency",
+              currency: "IDR",
+            })}
+          </p>
+        </div>
+      </div>
     );
   });
 
   return (
-    <div className="py-16 md:py-24 mb-[4rem] mx-[5%]">
+    <div className="py-8 md:py-24 mb-[4rem] mx-[5%]">
       <div className="text-center animation">
         <h2 className="text-3xl">popular products</h2>
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
         <p className="mt-4">we present products with the best quality</p>
       </div>
-      <Carousel className="py-12">
-        <CarouselContent className="flex w-[100%] gap-1">
-          {newDataProduct}
-        </CarouselContent>
-        <CarouselPrevious className="text-black" />
-        <CarouselNext className="text-black" />
-      </Carousel>
+      <div className="grid mt-12 grid-cols-2 gap-4 md:hidden">
+        {newDataProduct}
+      </div>
+      <div className="hidden md:block">
+        <Carousel className="py-12">
+          <CarouselContent className="flex w-full gap-2">
+            {dataProduct.map((value, index) => (
+              <CarouselItem key={index} className="w-[25%] flex-shrink-0">
+                <Image
+                  src={value.imgUrl}
+                  alt="img"
+                  width={400}
+                  height={400}
+                  className="object-cover w-full h-[300px]"
+                />
+                <div className="mt-2">
+                  <h3 className="text-lg">{value.name}</h3>
+                  <p className="text-xl">
+                    {value.price.toLocaleString("id", {
+                      style: "currency",
+                      currency: "IDR",
+                    })}
+                  </p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="text-black" />
+          <CarouselNext className="text-black" />
+        </Carousel>
 
-      <div>
-        <Link href="product" className="py-4 px-7 bg-[#2d2d2d] text-white">
-          more products
-        </Link>
+        <div>
+          <Link href="product" className="py-4 px-7 bg-[#2d2d2d] text-white">
+            more products
+          </Link>
+        </div>
       </div>
     </div>
   );
