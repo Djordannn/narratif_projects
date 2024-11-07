@@ -2,6 +2,13 @@ import Link from "../../../node_modules/next/link";
 import Image from "../../../node_modules/next/image";
 import logo from "/public/image/logo.png";
 import { FaBars } from "react-icons/fa";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export default function Navbar() {
   return (
@@ -36,12 +43,42 @@ export default function Navbar() {
               <Link href="/link">contact</Link>
             </li>
           </ul>
-          <div className="lg:hidden md:block">
-            <ul>
-              <li className="text-2xl">
-                <FaBars />
-              </li>
-            </ul>
+          <div className="block md:hidden">
+            <Sheet>
+              <SheetTrigger>
+                <FaBars className="text-2xl" />
+              </SheetTrigger>
+              <SheetContent className="bg-[#fff]">
+                <SheetHeader>
+                  <div className="bg-[#eeee] py-6 ">
+                    <Image src={logo} alt="img" className="w-[80px] mx-auto" />
+                    <h2 className="mt-2">narratif.apparel</h2>
+                  </div>
+                  <SheetDescription>
+                    <ul className="text-left mt-6 flex flex-col gap-4 text-lg 2xl:text-2xl uppercase text-[#2d2d2d]">
+                      <li>
+                        <Link href="/">home</Link>
+                      </li>
+                      <li>
+                        <Link href="/product">product</Link>
+                      </li>
+                      <li>
+                        <Link href="/customJersey">custom jersey</Link>
+                      </li>
+                      <li>
+                        <Link href="/blog">blog</Link>
+                      </li>
+                      <li>
+                        <Link href="/gallery">gallery</Link>
+                      </li>
+                      <li>
+                        <Link href="/link">contact</Link>
+                      </li>
+                    </ul>
+                  </SheetDescription>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
