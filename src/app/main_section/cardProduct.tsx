@@ -72,7 +72,7 @@ const CardProduct = () => {
     <div className="py-8 md:py-24 mb-[4rem] mx-[5%]">
       <div className="text-center animation">
         <h2 className="text-3xl">popular products</h2>
-        <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
+        <hr className="h-1 w-[20%] md:w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
         <p className="mt-4">we present products with the best quality</p>
       </div>
       <div className="grid mt-12 grid-cols-2 gap-4 md:hidden">
