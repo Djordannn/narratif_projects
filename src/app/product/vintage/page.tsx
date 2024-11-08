@@ -2,64 +2,37 @@
 
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import imgCard from "/public/image/blue.png";
-import img2 from "/public/image/green.png";
+import vintage from "/public/image/vintageRetor.png";
+import vintage2 from "/public/image/vintage1453.png";
+import vintage3 from "/public/image/vintagePuprl.png";
+import vintage4 from "/public/image/vintageCyan.png";
+import vintage5 from "/public/image/vintageBW.png";
 
 const data = [
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: vintage,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: img2,
+    imgUrl: vintage2,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: vintage3,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: vintage4,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: img2,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
+    imgUrl: vintage5,
   },
 ];
 
@@ -86,7 +59,9 @@ const Vintage = () => {
   });
   return (
     <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{newData}</div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {newData}
+      </div>
     </div>
   );
 };

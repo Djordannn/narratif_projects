@@ -40,7 +40,7 @@ const Review = () => {
     return (
       <div
         key={index}
-        className="bg-[#eeee] w-[400px] md:w-[450px] h-[250px] md:h-[200px] p-4 flex flex-col justify-between"
+        className="bg-[#eeee] w-[400px] md:w-[450px] h-[230px] md:h-[200px] p-4 flex flex-col justify-between"
       >
         <div className=" ">
           <div className="flex items-center gap-2 mb-2">

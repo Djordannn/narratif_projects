@@ -2,43 +2,43 @@
 
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import imgCard from "/public/image/blue.png";
+import imgBlue from "/public/image/blue.png";
+import imgRed from "/public/image/red.png";
+import imgGreen from "/public/image/green.png";
+import imgWhite from "/public/image/white.png";
+import imgBlack from "/public/image/black.png";
+import imgGrey from "/public/image/grey.png";
 
 const data = [
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: imgBlue,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: imgRed,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: imgGreen,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: imgWhite,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: imgBlack,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
+    imgUrl: imgGrey,
   },
 ];
 
@@ -66,7 +66,9 @@ const Tshirt = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{newData}</div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {newData}
+      </div>
     </div>
   );
 };

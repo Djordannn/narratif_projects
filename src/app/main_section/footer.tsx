@@ -3,6 +3,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { RxInstagramLogo } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
+import { FiFacebook } from "react-icons/fi";
+import { PiTiktokLogo } from "react-icons/pi";
 import Link from "../../../node_modules/next/link";
 import Image from "../../../node_modules/next/image";
 import logo from "/public/image/logo.png";
@@ -49,13 +51,13 @@ const Footer = () => {
             </div>
             <ul className="flex flex-col gap-3 justify-center">
               <li>
-                <Link href="#">blog</Link>
+                <Link href="/blog">blog</Link>
               </li>
               <li>
-                <Link href="#">product</Link>
+                <Link href="/product">product</Link>
               </li>
               <li>
-                <Link href="#">contact</Link>
+                <Link href="/link">contact</Link>
               </li>
             </ul>
           </div>
@@ -78,18 +80,18 @@ const Footer = () => {
             <div>
               <ul className="flex gap-3">
                 <li className="bg-[#3c3c3c] p-3">
-                  <a href="#">
+                  <a href="https://www.instagram.com/narratif.apparel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                     <RxInstagramLogo />
                   </a>
                 </li>
                 <li className="bg-[#3c3c3c] p-3">
-                  <a href="#">
-                    <RxInstagramLogo />
+                  <a href="https://www.facebook.com/permalink.php/?story_fbid=122111389718497803&id=61564934109406">
+                    <FiFacebook />
                   </a>
                 </li>
                 <li className="bg-[#3c3c3c] p-3">
-                  <a href="#">
-                    <RxInstagramLogo />
+                  <a href="https://www.tiktok.com/@narratif.apparel?is_from_webapp=1&sender_device=pc">
+                    <PiTiktokLogo />
                   </a>
                 </li>
               </ul>

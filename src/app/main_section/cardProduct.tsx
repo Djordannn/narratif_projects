@@ -3,10 +3,10 @@
 import React from "react";
 import Link from "../../../node_modules/next/link";
 import Image from "../../../node_modules/next/image";
-import img1 from "/public/image/white.png";
-import img2 from "/public/image/green.png";
-import img3 from "/public/image/red.png";
-import img4 from "/public/image/blue.png";
+import img1 from "/public/image/boxing.png";
+import img2 from "/public/image/boxing2.png";
+import img3 from "/public/image/tennis.png";
+import img4 from "/public/image/boxingWhite.png";
 import img5 from "/public/image/black.png";
 import {
   Carousel,

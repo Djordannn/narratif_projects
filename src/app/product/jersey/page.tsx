@@ -2,49 +2,43 @@
 
 import React from "react";
 import Image from "../../../../node_modules/next/image";
-import imgCard from "/public/image/blue.png";
-import img2 from "/public/image/green.png";
+import tennis from "/public/image/tennis.png";
+import boxing from "/public/image/boxing.png";
+import boxing2 from "/public/image/boxingWhite.png";
+import boxing3 from "/public/image/boxing2.png";
+import uns from "/public/image/uns.png";
+import undip from "/public/image/undip.png";
 
 const data = [
   {
     title: "name",
     price: 99000,
-    imgUrl: img2,
+    imgUrl: tennis,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: boxing,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: boxing2,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: boxing3,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: img2,
+    imgUrl: uns,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
-  },
-  {
-    title: "name",
-    price: 99000,
-    imgUrl: imgCard,
+    imgUrl: undip,
   },
 ];
 
@@ -71,7 +65,9 @@ const Jersey = () => {
   });
   return (
     <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{newData}</div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {newData}
+      </div>
     </div>
   );
 };

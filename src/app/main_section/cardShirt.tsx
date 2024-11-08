@@ -1,7 +1,7 @@
 "use client";
 import Image from "../../../node_modules/next/image";
 import ImgFutsal from "/public/image/futsal.jpg";
-import ImgRunner from "/public/image/runner.jpg";
+import ImgRunner from "/public/image/img-prov.jpg";
 import ImgJersey from "/public/image/jersey.jpg";
 
 const data = [
@@ -27,7 +27,7 @@ export default function Cardshirt() {
           <Image
             src={value.imgUrl}
             alt="img-shirt"
-            className="w-[100%] h-[300px] lg:h-[250px] object-cover object-top"
+            className="w-[100%] h-[300px] lg:h-[300px] object-cover object-top"
           />
           <div className="absolute bottom-4 left-5">
             <h3 className="text-2xl text-white tracking-tight">

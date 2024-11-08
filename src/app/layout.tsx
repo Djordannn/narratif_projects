@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/app/main_section/navbar";
 import Footer from "@/app/main_section/footer";
+import WhatsApp from "./main_section/whatsAppPop";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -42,6 +43,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <WhatsApp />
         <Footer />
       </body>
     </html>
