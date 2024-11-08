@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "../../../node_modules/next/image";
 import img1 from "/public/image/ladaPapat.jpg";
@@ -76,7 +77,7 @@ const Gallery = () => {
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
         <p className="mt-4">discover our story</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 px-[5%]">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mx-[5%]">
         {newData}
       </div>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { RxInstagramLogo } from "react-icons/rx";
+import Marquee from "react-fast-marquee";
 
 // interface IReview {
 //   ig: string;
@@ -39,7 +40,7 @@ const Review = () => {
     return (
       <div
         key={index}
-        className="bg-[#eeee] md:h-[200px] p-4 flex flex-col justify-between"
+        className="bg-[#eeee] w-[400px] md:w-[450px] h-[250px] md:h-[200px] p-4 flex flex-col justify-between"
       >
         <div className=" ">
           <div className="flex items-center gap-2 mb-2">
@@ -55,7 +56,7 @@ const Review = () => {
   });
 
   return (
-    <div className="py-16 mb-6 md:py-14 mx-[5%] md:mx-0 md:pl-[5%]">
+    <div className="pb-24 mb-6 mx-[5%] md:mx-0">
       <div className="text-center md:pr-[5%]">
         <h2 className="text-3xl">what people say</h2>
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
@@ -64,9 +65,9 @@ const Review = () => {
         </p>
       </div>
       <div>
-        <div className="mt-[4rem] grid grid-flow-col auto-cols-[60%] md:auto-cols-[40%] gap-4 overflow-auto pr-0">
-          {newDataReview}
-        </div>
+        <Marquee pauseOnClick={true}>
+          <div className="mt-[4rem] flex gap-4 pr-0 mx-2">{newDataReview}</div>
+        </Marquee>
       </div>
     </div>
   );
