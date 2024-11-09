@@ -87,9 +87,7 @@ const CardProduct = () => {
                   <Image
                     src={value.imgUrl}
                     alt="img"
-                    width={400}
-                    height={400}
-                    className="w-full h-[320px] object-contain pb-10"
+                    className="w-full h-[320px] 2xl:h-[350px] object-contain pb-10"
                   />
                 </div>
                 <div className="mt-2">

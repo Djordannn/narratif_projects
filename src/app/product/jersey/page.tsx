@@ -49,11 +49,11 @@ const Jersey = () => {
         <Image
           src={value.imgUrl}
           alt="imgCard2.jpg"
-          className="w-[100%] h-[230px] md:h-[300px] bg-[#eeee] object-contain pb-7 lg:h-[250px]"
+          className="w-[100%] h-[200px] md:h-[180px] bg-[#eeee] object-contain pb-7 lg:h-[200px] xl:h-[250px] 2xl:h-[300px] "
         />
         <div className="mt-2">
-          <h2 className="md:text-xl font-thin">{value.title}</h2>
-          <p className="md:text-xl">
+          <h2 className="xl:text-xl font-thin">{value.title}</h2>
+          <p className="xl:text-xl">
             {value.price.toLocaleString("id", {
               style: "currency",
               currency: "IDR",

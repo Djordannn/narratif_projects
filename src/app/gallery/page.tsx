@@ -65,7 +65,7 @@ const Gallery = () => {
         <Image
           src={value.imgUrl}
           alt="img"
-          className="w-[100%] object-cover h-[200px] md:h-[400px]"
+          className="w-[100%] object-cover h-[200px] md:h-[400px] 2xl:h-[500px]"
         />
       </div>
     );

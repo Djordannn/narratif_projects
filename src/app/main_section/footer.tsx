@@ -18,9 +18,9 @@ const Footer = () => {
             <Image
               src={logo}
               alt="img"
-              className="w-[80px] bg-[#ffff] p-5 rounded-lg"
+              className="w-[50px] xl:w-[80px] bg-[#ffff] p-3 xl:p-5 rounded-lg"
             />
-            <h1 className="text-5xl">Narratif</h1>
+            <h1 className="text-3xl xl:text-5xl">Narratif</h1>
           </div>
           <p className="md:w-[70%] text-sm mt-3">
             Stories don&apops;t only come from customers, other stories will
@@ -47,7 +47,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <h2 className="text-lg mb-2">our service</h2>
-              <div className="h-1 bg-white w-[30%] md:w-[60%] rounded"></div>
+              <div className="h-1 bg-white w-[30%] md:w-[60%] xl:w-[40%] rounded"></div>
             </div>
             <ul className="flex flex-col gap-3 justify-center">
               <li>
@@ -64,7 +64,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <h2 className="text-lg mb-2">privacy</h2>
-              <div className="h-1 bg-white w-[30%] md:w-[60%] rounded"></div>
+              <div className="h-1 bg-white w-[30%] md:w-[60%] xl:w-[40%] rounded"></div>
             </div>
             <ul className="flex flex-col gap-3 justify-center">
               <li>
@@ -75,7 +75,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <h2 className="text-lg mb-2">follow me</h2>
-              <div className="h-1 bg-white w-[30%] md:w-[60%] rounded"></div>
+              <div className="h-1 bg-white w-[30%] md:w-[60%] xl:w-[40%] rounded"></div>
             </div>
             <div>
               <ul className="flex gap-3">

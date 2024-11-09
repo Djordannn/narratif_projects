@@ -23,27 +23,39 @@ export default function Navbar() {
             />
             <h2 className="text-xl font-semibold 2xl:text-2xl">narratif</h2>
           </Link>
-          <ul className="hidden md:flex items-center gap-5 text-lg 2xl:text-2xl uppercase">
+          <ul className="hidden lg:flex items-center gap-5 text-lg 2xl:text-2xl uppercase">
             <li>
-              <Link href="/">home</Link>
+              <Link href="/" className="hover:opacity-50">
+                home
+              </Link>
             </li>
             <li>
-              <Link href="/product">product</Link>
+              <Link href="/product" className="hover:opacity-50">
+                product
+              </Link>
             </li>
             <li>
-              <Link href="/customJersey">custom jersey</Link>
+              <Link href="/customJersey" className="hover:opacity-50">
+                custom jersey
+              </Link>
             </li>
             <li>
-              <Link href="/blog">blog</Link>
+              <Link href="/blog" className="hover:opacity-50">
+                blog
+              </Link>
             </li>
             <li>
-              <Link href="/gallery">gallery</Link>
+              <Link href="/gallery" className="hover:opacity-50">
+                gallery
+              </Link>
             </li>
             <li>
-              <Link href="/link">contact</Link>
+              <Link href="/link" className="hover:opacity-50">
+                contact
+              </Link>
             </li>
           </ul>
-          <div className="block md:hidden">
+          <div className="block lg:hidden">
             <Sheet>
               <SheetTrigger>
                 <FaBars className="text-2xl" />
@@ -57,22 +69,34 @@ export default function Navbar() {
                   <SheetDescription>
                     <ul className="text-left mt-3 flex flex-col gap-4 text-lg 2xl:text-2xl uppercase text-[#2d2d2d]">
                       <li>
-                        <Link href="/">home</Link>
+                        <Link href="/" className="hover:opacity-50">
+                          home
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/product">product</Link>
+                        <Link href="/product" className="hover:opacity-50">
+                          product
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/customJersey">custom jersey</Link>
+                        <Link href="/customJersey" className="hover:opacity-50">
+                          custom jersey
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/blog">blog</Link>
+                        <Link href="/blog" className="hover:opacity-50">
+                          blog
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/gallery">gallery</Link>
+                        <Link href="/gallery" className="hover:opacity-50">
+                          gallery
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/link">contact</Link>
+                        <Link href="/link" className="hover:opacity-50">
+                          contact
+                        </Link>
                       </li>
                     </ul>
                   </SheetDescription>

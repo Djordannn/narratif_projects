@@ -23,7 +23,7 @@ export default function ProductLayout({ children }: ProductLayoutProps) {
           <Image
             src={imgBanner}
             alt="img"
-            className="w-[100%] h-[170px] md:h-[250px] object-cover object-center"
+            className="w-[100%] h-[170px] lg:h-[250px] 2xl:h-[300px] object-cover object-center"
           />
           <h1 className="absolute bottom-[1rem] left-[1.5rem] text-xl md:text-3xl text-white tracking-wider">
             Product
@@ -50,7 +50,7 @@ export default function ProductLayout({ children }: ProductLayoutProps) {
             </SelectContent>
           </Select>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 2xl:pb-8">
           <Sidebar />
           <div className="md:w-[80%]">
             <div>{children}</div>
