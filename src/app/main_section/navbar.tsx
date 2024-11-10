@@ -62,7 +62,7 @@ export default function Navbar() {
               </SheetTrigger>
               <SheetContent className="bg-[#fff]">
                 <SheetHeader>
-                  <div className="bg-[#eeee] py-6 mt-5">
+                  <div className="bg-[#eeee] py-6 mt-5 text-center">
                     <Image src={logo} alt="img" className="w-[80px] mx-auto" />
                     <h2 className="mt-2">narratif.apparel</h2>
                   </div>
