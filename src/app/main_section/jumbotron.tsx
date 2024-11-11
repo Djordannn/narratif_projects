@@ -3,6 +3,8 @@
 import React, { useRef } from "react";
 import Image from "../../../node_modules/next/image";
 import img from "/public/image/imgMain.jpg";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+
 import {
   Carousel,
   CarouselContent,
@@ -46,21 +48,48 @@ const Jumbotron = () => {
             <Image
               src={value.imgUrl}
               alt="img"
-              className="w-[100%] ml-4  h-[250px] md:h-[500px] 2xl:h-[600px] object-cover object-top"
+              className="w-[100%] ml-4 h-[250px] md:h-[550px] 2xl:h-[600px] object-cover object-top"
             />
-            {/* <div className="absolute left-8 bottom-5 md:left-16 md:bottom-10 text-white flex flex-col gap-3">
-              <h1 className="text-5xl font-semibold tracking-wide">
-                {value.title}
-              </h1>
-              <p className="w-[80%]">{value.text}</p>
-            </div> */}
           </a>
         </div>
       </CarouselItem>
     );
   });
   return (
-    <div className="relative">
+    <div className="mx-[5%]">
+      <div className="py-14 md:py-0 md:pt-14 md:pb-24 flex flex-col gap-2 text-center">
+        <div className="flex justify-center relative">
+          <Avatar className="border-4 border-white ">
+            <Image src={img} alt="img" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          <Avatar className="border-4 border-white -ml-4">
+            <Image src={img} alt="img" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          <Avatar className="border-4 border-white -ml-4">
+            <Image src={img} alt="img" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        </div>
+        <h1 className="text-3xl md:text-5xl">
+          narratif apparel
+          <br />
+          made to be your story
+        </h1>
+        <p className="w-[80%] md:w-[40%] text-sm mx-auto">
+          We will be part of your story, every moment and process our narrators
+          are ready to be involved.
+        </p>
+        <div className="mt-4 flex gap-4 items-center justify-center">
+          <a
+            href="#product"
+            className="bg-[#2d2d2d] text-white py-2 px-8 hover:opacity-85"
+          >
+            more
+          </a>
+        </div>
+      </div>
       <Carousel
         plugins={[autoplay.current]}
         // options={{ loop: true, containScroll: "trimSnaps" }}
