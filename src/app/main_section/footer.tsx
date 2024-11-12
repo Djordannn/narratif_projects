@@ -38,7 +38,12 @@ const Footer = () => {
               </li>
               <li className="flex gap-4 items-center">
                 <IoLocationOutline />
-                <p className="text-sm">location📌</p>
+                <a href="https://www.google.co.id/maps/search/Jl.+Sinar+kencana+V+no.33,+perum+sinar+Waluyo,+kel+kedungmundu,+kec+tembalang,%C2%A0kota%C2%A0Semarang/@-7.0244552,110.471928,18z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+                  <p className="text-sm hover:opacity-75">
+                    Jl. Sinar kencana V no.33, perum sinar Waluyo, kel
+                    kedungmundu, kec tembalang, kota Semarang
+                  </p>
+                </a>
               </li>
             </ul>
           </div>
@@ -102,7 +107,7 @@ const Footer = () => {
       <hr className="h-1 my-[4rem] bg-white" />
       <div className="-mt-[2rem] text-center">
         <h3 className="text-sm md:text-lg">
-          copyright <span className="font-semibold">narratif.apparel</span> all
+          copyright <span className="font-semibold">@narratif.apparel</span> all
           right reserved
         </h3>
       </div>
