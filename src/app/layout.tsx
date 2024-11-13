@@ -29,10 +29,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
-          rel="stylesheet"
-        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
