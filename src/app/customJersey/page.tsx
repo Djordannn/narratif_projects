@@ -41,7 +41,7 @@ const CustomJersey = () => {
         <Image
           src={value.imgUrl}
           alt="imgCard2.jpg"
-          className="w-[100%] h-[230px] md:h-[300px] bg-[#eeee] object-contain pb-7 lg:h-[250px]"
+          className="w-[100%] h-[230px] md:h-[300px] bg-[#eeee] object-contain pb-7 lg:h-[250px]  2xl:h-[300px]"
         />
         <div className="mt-2">
           <h2 className="text-lg md:text-xl font-thin">{value.title}</h2>
@@ -70,7 +70,7 @@ const CustomJersey = () => {
             custom jersey
           </h1>
           <hr className="h-1 w-[20%] md:w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
-          <p className="mt-4 md:w-[50%] mx-auto">
+          <p className="mt-4 md:w-[50%] mx-auto 2xl:text-lg">
             hello Narrator Want to customize Jersey but don&apos;t have a design
             yet? Here, Narratif will make your dream design come true
           </p>

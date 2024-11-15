@@ -26,7 +26,7 @@ const Gallery = async () => {
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
         <p className="mt-4">discover our story</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mx-[5%]">
+      <div className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4 mx-[5%]">
         {data &&
           data.items?.map(
             (value: Entry<TypeNarratifImgSkeleton>, index: number) => {
@@ -41,7 +41,7 @@ const Gallery = async () => {
                     width={1000}
                     height={300}
                     quality={100}
-                    className="object-cover h-[200px] md:h-[400px] 2xl:h-[500px]"
+                    className="object-cover h-[200px] md:h-[400px]"
                   />
                 </div>
               );

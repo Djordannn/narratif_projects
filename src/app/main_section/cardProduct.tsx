@@ -73,7 +73,9 @@ const CardProduct = () => {
       <div className="text-center animation">
         <h2 className="text-3xl">popular products</h2>
         <hr className="h-1 w-[20%] md:w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
-        <p className="mt-4">we present products with the best quality</p>
+        <p className="mt-4 2xl:text-lg">
+          we present products with the best quality
+        </p>
       </div>
       <div className="grid mt-12 grid-cols-2 gap-4 md:hidden">
         {newDataProduct}
@@ -84,7 +86,7 @@ const CardProduct = () => {
             {dataProduct.map((value, index) => (
               <CarouselItem
                 key={index}
-                className="md:basis-1/3 lg:basis-[29%] flex-shrink-0"
+                className="md:basis-1/3 lg:basis-[29%] 2xl:basis-[25%] flex-shrink-0"
               >
                 <div className="bg-[#eeee]">
                   <Image

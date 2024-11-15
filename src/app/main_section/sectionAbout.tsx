@@ -9,7 +9,7 @@ const Sectionabout = () => {
             we are present <br />
             for your story
           </h1>
-          <p className="mt-3 text-center text-sm">
+          <p className="mt-3 text-center text-sm 2xl:w-[90%] 2xl:text-lg mx-auto">
             everyone has a memorable moment in every corner of their life, the
             clothes/clothes you wear become one of the objects to remember that
             moment. Narratif Apparel is committed to being a friend in every

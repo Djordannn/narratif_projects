@@ -39,7 +39,7 @@ const Blog = () => {
     );
   });
   return (
-    <div className="mx-[5%] py-14">
+    <div className="mx-[5%] pt-14 pb-14 2xl:pb-44">
       <div className="mb-[5rem] text-center">
         <h1 className="text-4xl uppercase font-bold">blog</h1>
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />

@@ -52,7 +52,7 @@ const Review = () => {
       <div className="text-center md:pr-[5%]">
         <h2 className="text-3xl">what people say</h2>
         <hr className="h-1 w-[10%] mx-auto bg-[#2d2d2d] mt-3" />
-        <p className="mt-4">
+        <p className="mt-4 2xl:text-lg">
           what other people say is the result of our hard work
         </p>
       </div>

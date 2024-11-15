@@ -44,7 +44,7 @@ const Jumbotron = () => {
             <Image
               src={value.imgUrl}
               alt="img"
-              className="w-[100%] ml-4 h-[250px] sm:h-[350px] md:h-[550px] 2xl:h-[600px] object-cover object-top"
+              className="w-[100%] ml-4 h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] 2xl:h-[600px] object-cover object-top"
             />
           </a>
         </div>
@@ -73,7 +73,7 @@ const Jumbotron = () => {
           <br />
           made to be your story
         </h1>
-        <p className="w-[80%] md:w-[40%] text-sm mx-auto">
+        <p className="w-[80%] md:w-[40%] text-sm mx-auto 2xl:text-lg 2xl:w-[30%]">
           We will be part of your story, every moment and process our narrators
           are ready to be involved.
         </p>

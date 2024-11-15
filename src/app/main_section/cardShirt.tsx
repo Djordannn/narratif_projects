@@ -27,7 +27,7 @@ export default function Cardshirt() {
           <Image
             src={value.imgUrl}
             alt="img-shirt"
-            className="w-[100%] h-[300px] md:h-[200px] lg:h-[300px] 2xl:h-[350px] object-cover object-top"
+            className="w-[100%] h-[300px] lg:h-[300px] 2xl:h-[400px] object-cover object-top"
           />
           <div className="absolute bottom-4 left-5">
             <h3 className="text-2xl text-white tracking-tight">
@@ -43,8 +43,12 @@ export default function Cardshirt() {
       {/* <h2 className="text-2xl font-semibold">collection</h2> */}
       <div className="card grid grid-cols-1 sm:grid-cols-4 grid-rows-auto gap-4 mt-4 animation">
         <div className="w-[70%] mx-auto text-center md:w-[100%] md:text-left">
-          <h2 className="text-3xl md:text-4xl">our jersey products</h2>
-          <p className="mt-2">we have several types of clothing products</p>
+          <h2 className="text-3xl md:text-4xl 2xl:text-6xl">
+            our jersey products
+          </h2>
+          <p className="mt-2 2xl:text-xl">
+            we have several types of clothing products
+          </p>
         </div>
         {newData}
       </div>
