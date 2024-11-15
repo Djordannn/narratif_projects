@@ -10,28 +10,20 @@ import Marquee from "react-fast-marquee";
 
 const dataReview = [
   {
-    ig: "@name",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimusmaiores corporis laborum, expedita odio repudiandae.",
+    ig: "@heru031",
+    text: "Because I like the design of the product which is very attractive and has very cool colors, making this product attractive to various groups.",
   },
   {
-    ig: "@name",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimusmaiores corporis laborum, expedita odio repudiandae.",
+    ig: "@d_nish127",
+    text: "I saw the first impressions of the very interesting narrative product, I can use it for my daily activities and it will also be the vendor of choice when I want to make a new t-shirt.",
   },
   {
-    ig: "@name",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimusmaiores corporis laborum, expedita odio repudiandae.",
+    ig: "@miftah_i_saputra",
+    text: "Design is simple and can be used to hang out and seen from the material is very good, it doesn't make you feel hot.",
   },
   {
-    ig: "@name",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimusmaiores corporis laborum, expedita odio repudiandae.",
-  },
-  {
-    ig: "@name",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimusmaiores corporis laborum, expedita odio repudiandae.",
-  },
-  {
-    ig: "@name",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimusmaiores corporis laborum, expedita odio repudiandae.",
+    ig: "@a_rdhifs",
+    text: "Narratif's products are very good, good materials combined with contemporary designs, making all your OOTD activities even more awesome.",
   },
 ];
 

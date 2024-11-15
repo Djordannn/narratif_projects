@@ -1,32 +1,36 @@
 import Image from "../../../node_modules/next/image";
 import imgCustom from "/public/image/ladaPapat.jpg";
-import imgCard from "/public/image/blue.png";
+import img1 from "/public/image/vintageRetor.png";
+import img2 from "/public/image/boxing.png";
+import img3 from "/public/image/uns.png";
+import img4 from "/public/image/undip.png";
+import img5 from "/public/image/tennis.png";
 
 const data = [
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: img1,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: img2,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: img3,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: img4,
   },
   {
     title: "name",
     price: 99000,
-    imgUrl: imgCard,
+    imgUrl: img5,
   },
 ];
 
@@ -72,7 +76,7 @@ const CustomJersey = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         {newData}
       </div>
     </div>

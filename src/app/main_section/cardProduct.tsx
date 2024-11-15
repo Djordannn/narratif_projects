@@ -52,7 +52,7 @@ const CardProduct = () => {
           <Image
             src={value.imgUrl}
             alt="img"
-            className="h-[200px] object-contain pb-9"
+            className="h-[200px] sm:h-[250px] object-contain pb-9"
           />
         </div>
         <div className="mt-2">
@@ -82,7 +82,10 @@ const CardProduct = () => {
         <Carousel className="py-12">
           <CarouselContent className="flex w-full gap-2">
             {dataProduct.map((value, index) => (
-              <CarouselItem key={index} className="basis-[29%] flex-shrink-0">
+              <CarouselItem
+                key={index}
+                className="md:basis-1/3 lg:basis-[29%] flex-shrink-0"
+              >
                 <div className="bg-[#eeee]">
                   <Image
                     src={value.imgUrl}

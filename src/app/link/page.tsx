@@ -12,7 +12,7 @@ const Link = () => {
         <p className="mt-4">create your experience with us</p>
       </div>
       <div className="w-[80%] md:w-[60%] mx-auto">
-        <ul className="flex flex-col gap-6 md:w-[50%] mx-auto">
+        <ul className="flex flex-col gap-6 lg:w-[50%] mx-auto">
           <li>
             <a
               href="https://shopee.co.id/c6u0mq247d?page=0&sortBy=pop&tab=0"
