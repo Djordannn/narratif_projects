@@ -2,7 +2,9 @@
 
 import React, { useRef } from "react";
 import Image from "../../../node_modules/next/image";
-import img from "/public/image/imgMain.jpg";
+import img from "/public/image/banner2.jpg";
+import img2 from "/public/image/banner1.jpg";
+import img3 from "/public/image/paskib4.jpg";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 import {
@@ -22,20 +24,14 @@ const imgJumbotron = [
   {
     title: "Title",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    imgUrl: img,
-    link: "blog",
+    imgUrl: img2,
+    link: "product",
   },
   {
     title: "Title",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    imgUrl: img,
-    link: "#",
-  },
-  {
-    title: "Title",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    imgUrl: img,
-    link: "#",
+    imgUrl: img3,
+    link: "product",
   },
 ];
 const Jumbotron = () => {
@@ -48,7 +44,7 @@ const Jumbotron = () => {
             <Image
               src={value.imgUrl}
               alt="img"
-              className="w-[100%] ml-4 h-[250px] md:h-[550px] 2xl:h-[600px] object-cover object-top"
+              className="w-[100%] ml-4 h-[250px] sm:h-[350px] md:h-[550px] 2xl:h-[600px] object-cover object-top"
             />
           </a>
         </div>
