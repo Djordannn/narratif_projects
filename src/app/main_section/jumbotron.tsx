@@ -5,6 +5,10 @@ import Image from "../../../node_modules/next/image";
 import img from "/public/image/banner2.jpg";
 import img2 from "/public/image/banner1.jpg";
 import img3 from "/public/image/paskib4.jpg";
+import imgRounded1 from "/public/image/runner.jpg";
+import imgRounded2 from "/public/image/futsal.jpg";
+import imgRounded3 from "/public/image/satria2.jpg";
+
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 import {
@@ -56,15 +60,15 @@ const Jumbotron = () => {
       <div className="py-14 md:py-0 md:pt-14 md:pb-24 flex flex-col gap-2 text-center">
         <div className="flex justify-center relative">
           <Avatar className="border-4 border-white ">
-            <Image src={img} alt="img" />
+            <Image src={imgRounded1} alt="img" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Avatar className="border-4 border-white -ml-4">
-            <Image src={img} alt="img" />
+            <Image src={imgRounded2} alt="img" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Avatar className="border-4 border-white -ml-4">
-            <Image src={img} alt="img" />
+            <Image src={imgRounded3} alt="img" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
